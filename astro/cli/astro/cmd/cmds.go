@@ -113,6 +113,16 @@ var planCmd = &cobra.Command{
 	},
 }
 
+var versionCmd = &cobra.Command{
+	Use:                   "version",
+	DisableFlagsInUseLine: true,
+	Short:                 "Print astro version",
+	RunE: func(cmd *cobra.Command, args []string) error {
+		fmt.Printf("astro version %s (%s) built %s\n", version, commit, date)
+		return nil
+	},
+}
+
 func userVariables() *astro.UserVariables {
 	values := make(map[string]string)
 	filters := make(map[string]bool)
@@ -139,4 +149,6 @@ func init() {
 	planCmd.PersistentFlags().BoolVar(&detach, "detach", false, "disconnect remote state before planning")
 	planCmd.PersistentFlags().StringVar(&moduleNamesString, "modules", "", "list of modules to plan")
 	rootCmd.AddCommand(planCmd)
+
+	rootCmd.AddCommand(versionCmd)
 }

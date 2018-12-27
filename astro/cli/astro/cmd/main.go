@@ -35,6 +35,10 @@ import (
 )
 
 var (
+	version = "DEV"
+	commit  = "none"
+	date    = "unknown"
+
 	userCfgFile string
 	trace       bool
 	userVars    map[string]string
