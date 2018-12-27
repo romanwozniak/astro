@@ -20,6 +20,10 @@ install:
 	go install github.com/uber/astro/astro/cli/astro
 	go install github.com/uber/astro/astro/tvm/cli/tvm
 
+.PHONY: release
+release: vendor
+	goreleaser release --rm-dist
+
 .PHONY: test
 test: vendor
 	go test -timeout 1m -coverprofile=.coverage.out ./... \
