@@ -27,10 +27,10 @@ bin:
 	mkdir -p bin
 
 bin/astro: bin $(SRC)
-	go build -o bin/astro github.com/romanwozniak/astro/astro/cli/astro
+	go build -o bin/astro github.com/uber/astro/astro/cli/astro
 
 bin/tvm: bin $(SRC)
-	go build -o bin/tvm github.com/romanwozniak/astro/astro/tvm/cli/tvm
+	go build -o bin/tvm github.com/uber/astro/astro/tvm/cli/tvm
 
 .PHONY: clean
 clean:
@@ -39,8 +39,8 @@ clean:
 
 .PHONY: install
 install:
-	go install github.com/romanwozniak/astro/astro/cli/astro
-	go install github.com/romanwozniak/astro/astro/tvm/cli/tvm
+	go install github.com/uber/astro/astro/cli/astro
+	go install github.com/uber/astro/astro/tvm/cli/tvm
 
 .PHONY: lint
 lint:

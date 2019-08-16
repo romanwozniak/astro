@@ -19,7 +19,7 @@ package astro
 import (
 	"fmt"
 
-	"github.com/romanwozniak/astro/astro/conf"
+	"github.com/uber/astro/astro/conf"
 
 	"github.com/hashicorp/terraform/dag"
 )

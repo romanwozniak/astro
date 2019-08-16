@@ -21,7 +21,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/romanwozniak/astro/astro/exec2"
+	"github.com/uber/astro/astro/exec2"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

@@ -27,9 +27,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/romanwozniak/astro/astro"
-	"github.com/romanwozniak/astro/astro/conf"
-	"github.com/romanwozniak/astro/astro/logger"
+	"github.com/uber/astro/astro"
+	"github.com/uber/astro/astro/conf"
+	"github.com/uber/astro/astro/logger"
 
 	"github.com/spf13/cobra"
 )

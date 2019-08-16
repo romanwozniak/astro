@@ -16,7 +16,7 @@
 
 package main
 
-import "github.com/romanwozniak/astro/astro/tvm/cli/tvm/cmd"
+import "github.com/uber/astro/astro/tvm/cli/tvm/cmd"
 
 func main() {
 	cmd.Execute()

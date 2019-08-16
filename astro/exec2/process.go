@@ -25,7 +25,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/romanwozniak/astro/astro/logger"
+	"github.com/uber/astro/astro/logger"
 )
 
 // NewProcess creates a new process, given the configuration. It does

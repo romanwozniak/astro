@@ -23,7 +23,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/romanwozniak/astro/astro/utils"
+	"github.com/uber/astro/astro/utils"
 
 	version "github.com/burl/go-version"
 	"github.com/stretchr/testify/assert"

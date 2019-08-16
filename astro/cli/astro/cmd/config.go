@@ -19,8 +19,8 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/romanwozniak/astro/astro/utils"
 	"github.com/spf13/cobra"
+	"github.com/uber/astro/astro/utils"
 )
 
 // configFileSearchPaths is the default list of paths the astro CLI

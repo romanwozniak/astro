@@ -16,7 +16,7 @@
 
 package astro
 
-import "github.com/romanwozniak/astro/astro/terraform"
+import "github.com/uber/astro/astro/terraform"
 
 // Result is what is returned from astro execution.
 type Result struct {

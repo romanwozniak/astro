@@ -24,10 +24,10 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/romanwozniak/astro/astro/cli/astro/cmd"
-	"github.com/romanwozniak/astro/astro/tvm"
-	"github.com/romanwozniak/astro/astro/utils"
 	"github.com/stretchr/testify/require"
+	"github.com/uber/astro/astro/cli/astro/cmd"
+	"github.com/uber/astro/astro/tvm"
+	"github.com/uber/astro/astro/utils"
 )
 
 var (

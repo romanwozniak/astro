@@ -21,8 +21,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/romanwozniak/astro/astro/logger"
-	"github.com/romanwozniak/astro/astro/utils"
+	"github.com/uber/astro/astro/logger"
+	"github.com/uber/astro/astro/utils"
 )
 
 // Detach disables any connection to the remote state for the given module. If

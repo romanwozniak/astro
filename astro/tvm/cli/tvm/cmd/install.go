@@ -22,7 +22,7 @@ import (
 
 	"github.com/spf13/viper"
 
-	"github.com/romanwozniak/astro/astro/tvm"
+	"github.com/uber/astro/astro/tvm"
 
 	"github.com/spf13/cobra"
 )

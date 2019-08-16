@@ -21,8 +21,8 @@ import (
 	"io"
 	"io/ioutil"
 
-	"github.com/romanwozniak/astro/astro"
-	"github.com/romanwozniak/astro/astro/terraform"
+	"github.com/uber/astro/astro"
+	"github.com/uber/astro/astro/terraform"
 
 	"github.com/hashicorp/go-multierror"
 	"github.com/logrusorgru/aurora"

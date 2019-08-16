@@ -22,7 +22,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/romanwozniak/astro/astro/tests"
+	"github.com/uber/astro/astro/tests"
 )
 
 func TestErrorDisplay(t *testing.T) {

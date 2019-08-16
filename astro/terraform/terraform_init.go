@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/romanwozniak/astro/astro/logger"
-	"github.com/romanwozniak/astro/astro/utils"
+	"github.com/uber/astro/astro/logger"
+	"github.com/uber/astro/astro/utils"
 )
 
 func (s *Session) terraformInitArgsLegacy() ([]string, error) {

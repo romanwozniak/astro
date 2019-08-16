@@ -21,8 +21,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/romanwozniak/astro/astro/logger"
-	"github.com/romanwozniak/astro/astro/terraform"
+	"github.com/uber/astro/astro/logger"
+	"github.com/uber/astro/astro/terraform"
 )
 
 // newTerraformSession returns a new Terraform session.

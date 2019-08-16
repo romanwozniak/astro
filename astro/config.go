@@ -23,8 +23,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/romanwozniak/astro/astro/conf"
-	"github.com/romanwozniak/astro/astro/logger"
+	"github.com/uber/astro/astro/conf"
+	"github.com/uber/astro/astro/logger"
 
 	"github.com/ghodss/yaml"
 )

@@ -21,8 +21,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/romanwozniak/astro/astro"
-	"github.com/romanwozniak/astro/astro/conf"
+	"github.com/uber/astro/astro"
+	"github.com/uber/astro/astro/conf"
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"

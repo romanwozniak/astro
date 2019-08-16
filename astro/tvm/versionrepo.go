@@ -28,7 +28,7 @@ import (
 	"runtime"
 	"sync"
 
-	"github.com/romanwozniak/astro/astro/utils"
+	"github.com/uber/astro/astro/utils"
 
 	homedir "github.com/mitchellh/go-homedir"
 )

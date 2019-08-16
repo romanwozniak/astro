@@ -21,7 +21,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/romanwozniak/astro/astro/conf"
+	"github.com/uber/astro/astro/conf"
 )
 
 // MissingRequiredVarsError is an error type that is returned from plan or
