@@ -21,8 +21,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/uber/astro/astro/logger"
-	"github.com/uber/astro/astro/utils"
+	"github.com/romanwozniak/astro/astro/logger"
+	"github.com/romanwozniak/astro/astro/utils"
 
 	"github.com/hashicorp/terraform/dag"
 )

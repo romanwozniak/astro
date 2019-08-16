@@ -20,7 +20,7 @@ import (
 	"errors"
 
 	multierror "github.com/hashicorp/go-multierror"
-	"github.com/uber/astro/astro/conf"
+	"github.com/romanwozniak/astro/astro/conf"
 )
 
 // Config is the Terraform configuration required to initialize and run

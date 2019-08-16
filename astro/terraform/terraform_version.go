@@ -19,7 +19,7 @@ package terraform
 import (
 	"fmt"
 
-	"github.com/uber/astro/astro/tvm"
+	"github.com/romanwozniak/astro/astro/tvm"
 
 	version "github.com/burl/go-version"
 )

@@ -21,7 +21,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/uber/astro/astro/conf"
+	"github.com/romanwozniak/astro/astro/conf"
 )
 
 func TestModuleExecution(t *testing.T) {

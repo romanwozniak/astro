@@ -21,7 +21,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/uber/astro/astro/exec2"
+	"github.com/romanwozniak/astro/astro/exec2"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
@@ -68,8 +68,8 @@ func TestCombinedOutputLog(t *testing.T) {
 
 	// This process writes something to stdout and stderr
 	process := exec2.NewProcess(exec2.Cmd{
-		Command: "/bin/sh",
-		Args:    []string{"-c", "echo Hello, world!; echo uhoh! >&2"},
+		Command:               "/bin/sh",
+		Args:                  []string{"-c", "echo Hello, world!; echo uhoh! >&2"},
 		CombinedOutputLogFile: tmpLogFile.Name(),
 	})
 

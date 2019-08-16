@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/uber/astro/astro/cli/astro/cmd"
+	"github.com/romanwozniak/astro/astro/cli/astro/cmd"
 )
 
 func main() {

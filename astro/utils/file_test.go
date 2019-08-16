@@ -19,7 +19,7 @@ package utils_test
 import (
 	"testing"
 
-	"github.com/uber/astro/astro/utils"
+	"github.com/romanwozniak/astro/astro/utils"
 
 	"github.com/stretchr/testify/assert"
 )
