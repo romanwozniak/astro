@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"os/exec"
 
-	"github.com/uber/astro/astro/logger"
-	"github.com/uber/astro/astro/tvm"
+	"github.com/romanwozniak/astro/astro/logger"
+	"github.com/romanwozniak/astro/astro/tvm"
 
 	version "github.com/burl/go-version"
 	multierror "github.com/hashicorp/go-multierror"

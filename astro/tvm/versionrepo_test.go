@@ -21,7 +21,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/uber/astro/astro/tvm"
+	"github.com/romanwozniak/astro/astro/tvm"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

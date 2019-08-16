@@ -20,10 +20,10 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/uber/astro/astro/conf"
-	"github.com/uber/astro/astro/logger"
-	"github.com/uber/astro/astro/tvm"
-	"github.com/uber/astro/astro/utils"
+	"github.com/romanwozniak/astro/astro/conf"
+	"github.com/romanwozniak/astro/astro/logger"
+	"github.com/romanwozniak/astro/astro/tvm"
+	"github.com/romanwozniak/astro/astro/utils"
 )
 
 // Project is a collection of Terraform modules, based on configuration.

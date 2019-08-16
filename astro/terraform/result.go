@@ -20,7 +20,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/uber/astro/astro/exec2"
+	"github.com/romanwozniak/astro/astro/exec2"
 )
 
 // Result is a generic interface that satisfies types returned

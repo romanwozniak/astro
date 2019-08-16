@@ -19,7 +19,7 @@ package astro
 import (
 	multierror "github.com/hashicorp/go-multierror"
 
-	"github.com/uber/astro/astro/conf"
+	"github.com/romanwozniak/astro/astro/conf"
 )
 
 // Option is an option for the c that allows for changing of options or

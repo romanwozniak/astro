@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/uber/astro/astro/conf"
+	"github.com/romanwozniak/astro/astro/conf"
 )
 
 // module represents a Terraform module.

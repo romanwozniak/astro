@@ -24,8 +24,8 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/uber/astro/astro/conf"
-	"github.com/uber/astro/astro/logger"
+	"github.com/romanwozniak/astro/astro/conf"
+	"github.com/romanwozniak/astro/astro/logger"
 
 	"github.com/kballard/go-shellquote"
 )

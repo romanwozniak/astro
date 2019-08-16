@@ -24,9 +24,9 @@ import (
 	"path/filepath"
 
 	version "github.com/burl/go-version"
-	"github.com/uber/astro/astro/exec2"
-	"github.com/uber/astro/astro/logger"
-	"github.com/uber/astro/astro/utils"
+	"github.com/romanwozniak/astro/astro/exec2"
+	"github.com/romanwozniak/astro/astro/logger"
+	"github.com/romanwozniak/astro/astro/utils"
 )
 
 // Session is a wrapper around Terraform commands. It ensures that all

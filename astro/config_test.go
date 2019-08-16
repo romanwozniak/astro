@@ -19,7 +19,7 @@ package astro_test
 import (
 	"testing"
 
-	"github.com/uber/astro/astro"
+	"github.com/romanwozniak/astro/astro"
 
 	"github.com/stretchr/testify/require"
 )
