@@ -93,9 +93,42 @@ func NewProject(opts ...Option) (*Project, error) {
 // project.
 func (c *Project) executions(parameters ExecutionParameters) executionSet {
 	results := executionSet{}
-	for _, m := range c.modules(parameters.ModuleNames) {
+	for _, m := range c.modules(nil) {
 		results = append(results, m.executions(parameters)...)
 	}
+
+	if parameters.ModuleNames != nil {
+		filteredResultsMap := make(map[terraformExecution]bool)
+
+		stack := parameters.ModuleNames
+		visited := map[string]bool{}
+		for _, m := range parameters.ModuleNames {
+			visited[m] = true
+		}
+
+		for len(stack) > 0 {
+			m := stack[len(stack)-1]
+			stack = stack[:len(stack)-1]
+
+			for _, e := range results.filterByModule(m) {
+				filteredResultsMap[e] = true
+				for _, dep := range e.ModuleConfig().Deps {
+					if _, ok := visited[dep.Module]; !ok {
+						visited[dep.Module] = true
+						stack = append(stack, dep.Module)
+					}
+				}
+			}
+		}
+
+		filteredResults := executionSet{}
+		for e, _ := range filteredResultsMap {
+			filteredResults = append(filteredResults, e)
+		}
+
+		return filteredResults
+	}
+
 	return results
 }
 
@@ -152,12 +185,12 @@ func (c *Project) Apply(parameters ApplyExecutionParameters) (<-chan string, <-c
 		return nil, nil, err
 	}
 
-	var applyFn func([]*boundExecution) (<-chan string, <-chan *Result, error)
-	if parameters.ModuleNames != nil {
-		applyFn = session.apply
-	} else {
-		applyFn = session.applyWithGraph
-	}
+	//var applyFn func([]*boundExecution) (<-chan string, <-chan *Result, error)
+	//if parameters.ModuleNames != nil {
+	//	applyFn = session.apply
+	//} else {
+	//	applyFn = session.applyWithGraph
+	//}
 
-	return applyFn(boundExecutions)
+	return session.applyWithGraph(boundExecutions)
 }

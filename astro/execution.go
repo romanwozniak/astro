@@ -158,6 +158,11 @@ func (e *unboundExecution) bind(userVars map[string]string) (*boundExecution, er
 	boundConfig := e.ModuleConfig()
 
 	// TODO: Loop over all module configuration using reflection
+	boundPath, err := replaceAllVars(boundConfig.Path, boundVars)
+	if err != nil {
+		return nil, fmt.Errorf("unable to bind execution: %v; %v", e.ID(), err)
+	}
+	boundConfig.Path = boundPath
 
 	boundBackendConfig, err := replaceAllVarsInMapValues(boundConfig.Remote.BackendConfig, boundVars)
 	if err != nil {

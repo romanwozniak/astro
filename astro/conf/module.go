@@ -17,13 +17,8 @@
 package conf
 
 import (
-	"errors"
 	"fmt"
-	"path/filepath"
-
-	"github.com/uber/astro/astro/utils"
-
-	multierror "github.com/hashicorp/go-multierror"
+	"github.com/hashicorp/go-multierror"
 )
 
 // Module is the static configuration of a Terraform module.
@@ -53,19 +48,19 @@ type Module struct {
 // Validate validates whether the configuration is good. Returns any validation
 // errors.
 func (m *Module) Validate() (errs error) {
-	if m.Path == "" {
-		errs = multierror.Append(errs, errors.New("path cannot be empty"))
-	} else {
-		fullModulePath := filepath.Join(m.TerraformCodeRoot, m.Path)
-
-		if !utils.IsWithinPath(m.TerraformCodeRoot, fullModulePath) {
-			errs = multierror.Append(errs, fmt.Errorf("module path cannot be outside code root: module path: %v; code root: %v", fullModulePath, m.TerraformCodeRoot))
-		}
-
-		if !utils.IsDirectory(fullModulePath) {
-			errs = multierror.Append(errs, fmt.Errorf("module directory does not exist: %v", fullModulePath))
-		}
-	}
+	//if m.Path == "" {
+	//	errs = multierror.Append(errs, errors.New("path cannot be empty"))
+	//} else {
+	//	fullModulePath := filepath.Join(m.TerraformCodeRoot, m.Path)
+	//
+	//	if !utils.IsWithinPath(m.TerraformCodeRoot, fullModulePath) {
+	//		errs = multierror.Append(errs, fmt.Errorf("module path cannot be outside code root: module path: %v; code root: %v", fullModulePath, m.TerraformCodeRoot))
+	//	}
+	//
+	//	if !utils.IsDirectory(fullModulePath) {
+	//		errs = multierror.Append(errs, fmt.Errorf("module directory does not exist: %v", fullModulePath))
+	//	}
+	//}
 	if err := m.Terraform.Validate(); err != nil {
 		errs = multierror.Append(errs, fmt.Errorf("Terraform: %v", err))
 	}
